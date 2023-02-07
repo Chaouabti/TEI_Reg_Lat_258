@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI SYSTEM "DTD-Reg_Lat_258.dtd">
+
+<?xml-model href="RNG_Elephant_Reg_Lat_258.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="RNG_Elephant_Reg_Lat_258.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>
+          <hi rend="italic">De bestiis</hi>
+        </title>
+        <respStmt>
+          <resp> Transcription et encodage du texte </resp>
+          <persName> Marion Charpier </persName>
+          <orgName> École Nationale des Chartes </orgName>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <p>La présente édition est réalisée à partir de la numérisation du <ref
+            target="#Reg.Lat.258"/>manuscrit Reg. Lat. 258.</p>
+      </editionStmt>
+      <publicationStmt>
+        <publisher> Marion Charpier </publisher>
+        <pubPlace> École Nationale des Chartes - Paris </pubPlace>
+        <date when="2023"/>
+        <authority> Biblioteca Apostolica Vaticana </authority>
+      </publicationStmt>
+      <sourceDesc>
+        <listWit>
+          <witness>
+            <msDesc xml:id="Reg.Lat.258">
+              <msIdentifier>
+                <country> Vatican </country>
+                <settlement> Cité du Vatican </settlement>
+                <institution> Biblioteca Apostolica Vaticana </institution>
+                <repository xml:lang="it"> Dipartimento Manoscritti </repository>
+                <collection> Reginensi latini </collection>
+                <idno type="cote_manuscrit"> Reginensi latini 258 </idno>
+                <idno type="URL">https://digi.vatlib.it/view/MSS_Reg.lat.258</idno>
+                <msName> Moralis quidam libellus, praecipue de bestiis, Patribus aliquotiens
+                  invocatis atque multis imaginibus adiectis. </msName>
+              </msIdentifier>
+
+              <!--Fiche du manuscrit-->
+              <head>
+                <title type="Incipit"> Angelos immortales creauit ut siue bonum siue malum egissent
+                  semper uiuerent. Homines autem ita condidit ut si non peccassent: sine morte
+                  haberent immortalitatem angelicam et eternam uitam </title>
+                <origDate notBefore="1201" notAfter="1225"> 1201-1225 </origDate>
+              </head>
+
+              <!-- Structure du manuscrit -->
+                     <msContents>
+                        <summary>Ce manuscrit contient : un traité sur <locus from="1r" to="7v">les
+                              vertus et les vices</locus>, un <locus from="8r" to="42v"><hi
+                                 rend="italic">De bestiis</hi></locus> et un lapidaire traitant des
+                              <locus from="42v" to="48r"><hi rend="italic">Douze pierres de
+                                 l'Apocalypse</hi></locus>. </summary>
+                        <textLang mainLang="lat"/>
+                        <msItemStruct>
+                           <locus from="8r" to="42v"/>
+                           <author> Auteur inconnu </author>
+                           <title> De bestiis </title>
+                           <incipit>
+                              <pb/>De bestiis <pb/> De Leone, phisiologus dicit quantus naturas
+                              habere leonem. </incipit>
+                           <explicit> Sed si uis uincere illum nichil posside hic nisi Christum </explicit>
+                           <filiation> Le <hi rend="italic">De bestiis</hi> est composé de cinquante
+                              et une notices et défie toute classification. <note>L'auteur, anonyme,
+                                 emprunte à la fois au <hi rend="italic">Physiologus</hi> B, à la
+                                 version B-Is, aux <hi rend="italic">Étymologies</hi> d’Isidore, à
+                                    l’<hi rend="italic">Hexaéméron</hi> de saint Ambroise, à
+                                 Grégoire le Grand et à saint Augustin. Les notices paraphrasent
+                                 souvent les sources, rendant parfois difficile l’identification de
+                                 source spécifique.</note>
+                           </filiation>
+                           <textLang mainLang="lat"/>
+                        </msItemStruct>
+                     </msContents>
+
+              <!-- Description matérielle du manuscrit -->
+                     <physDesc>
+                        <objectDesc>
+                           <supportDesc>
+                              <support>Parchemin</support>
+                              <extent> Saec. XIII', membr. mm. 216 X175 (173/187 X 120/130), ff. 48,
+                                 linn. 28-32. <width unit="216mm"/>
+                                 <height unit="175mm"/>
+                              </extent>
+                              <foliation> 1r-48r </foliation>
+                              <condition>Dans l'ensemble le manuscrit est bon état de conservation.
+                                certains passages sont néanmoins effacés par le temps et l'usure. Quelques folios
+                              présente des trous, qui semblent être d'origine et ne gêne pas la lecture du texte</condition>
+                           </supportDesc>
+                           <layoutDesc>
+                              <!-- disposition du texte sur le folio -->
+                              <layout columns="1" ruledLines="30" writtenLines="28 32">
+                                 <p>Le texte est justifié et la réglure apparente</p>
+                                 <p>Toutes les notices du De bestiis se suivent sans retour à la
+                                    ligne. Chaque nouvelle notice est signalé par un titre donnant
+                                    le nom de l'animal et un résumé de son interprétation symbolique
+                                 </p>
+                              </layout>
+                           </layoutDesc>
+                        </objectDesc>
+
+                        <handDesc hands="1">
+                           <handNote xml:id="auteur">
+                              <p><locus from="8r" to="42v"/> Le texte et les illustrations sont de
+                                 la même main.</p>
+                           </handNote>
+                        </handDesc>
+
+                        <scriptDesc>
+                           <scriptNote>l'écriture protogothique est très régulière et d'une très
+                              bonne lisibilité.</scriptNote>
+                        </scriptDesc>
+
+                        <decoDesc>
+                           <decoNote>
+                              <p> Le texte est illustré de 56 figures d'animaux réalisées à l'encre,
+                                 très probablement par <persName ref="#auteur">l’auteur</persName>
+                                 du texte. Chaque illustration prend place à la fin de la notice de
+                                 l'animal qu'elle représente. Dans la tradition du <hi rend="italic"
+                                    >Physiologus</hi> et des bestiaires, seule la partie éthologique
+                                 de chaque notice est représentée. Certaines notices n'ont pas été
+                                 illustrées mais des espaces ont été réservés pour
+                                 l'illustration.</p>
+                           </decoNote>
+                           <decoNote type="Cycle_iconographique" facs="#f39v">
+                              <p>Le chapitre consacré à l'éléphant est doté du cycle le plus
+                                 complexe et développé de tout le manuscrit. <ref facs="#Dragon"/>Le
+                                 dragon, placé dans la marge de gauche, grimpe le long du texte en
+                                 un mouvement ascendant, surgissant des enfers, vers <ref
+                                    facs="#Eléphant"/>l’éléphant. Ce dernier s’avance vers la
+                                 gauche, derrière lui <ref facs="#Mandragore"/>deux mandragores, une
+                                 femme et l’autre homme. Le mouvement de l’éléphant qui se dirige
+                                 tout droit vers la gueule ouverte du dragon, ainsi que la présence
+                                 de la mandragore, suggère la représentation d’Adam (ou Ève), chassé
+                                 du paradis, c’est-à-dire la chute. La scène représente l’instant où
+                                 l’histoire de l’humanité bascule et la composition renforce la
+                                 dimension diabolique du dragon <hi rend="italic">inoboedientiae
+                                    mundum</hi>. </p>
+                           </decoNote>
+                        </decoDesc>
+                     </physDesc>
+
+              <!-- Histoire et transmission du manuscrit -->
+              <history>
+                <origin>Le lieu de création du manuscrit est inconnu. L'écriture et les cycles
+                  iconographiques indiquent probablement une origine insulaire (sud de
+                  l'Angleterre?)</origin>
+                <provenance>
+                  <p>La première mention du manuscrit se trouve dans l'inventaire de la bibliothèque
+                    de reine Christine de Suède. A la fin du XVIIe siècle, le manuscrit et toute la
+                    bibliothèque royale, passèrent en la possession du cardinal Diecio Azzolini, qui
+                    mourut moins de deux mois après elle ; son neveu, Pompeio Azzolini, les vendit
+                    au cardinal Ottoboni, le futur pape Alexandre VIII, qui en donna une partie à la
+                    Bibliothèque Vaticane, où ils forment le fonds de la Reine, <hi rend="italic"
+                      >Reginensis</hi></p>
+                  <listBibl>
+                    <bibl xml:id="Baxter_1998" type="Travaux" xml:lang="eng">
+                      <author> Ron Baxter </author>
+                      <title> Bestiaries and Their Users in the Middle Ages </title>
+                      <pubPlace> Londres </pubPlace>
+                      <publisher> Sutton Publication ; Courtauld Institute </publisher>
+                      <date when="1998"> 1998 </date>
+                      <biblScope unit="page"> 242 pages </biblScope>
+                    </bibl>
+
+                    <bibl xml:id="Carmody_1938" type="Article" xml:lang="eng">
+                      <author> Francis James Carmody </author>
+                      <title> De <hi rend="italic">Bestiis et Aliis</hi> Rebus and the Latin <hi
+                          rend="italic">Physiologus</hi>
+                      </title>
+                      <series>
+                        <title> Speculum </title>
+                        <biblScope unit="volume"> Volume 13</biblScope>
+                        <biblScope unit="numero">2</biblScope>
+                      </series>
+                      <publisher>The University of Chicago Press</publisher>
+                      <date when="1938">Avril 1938</date>
+                      <biblScope unit="page" from="153" to="159">153-159</biblScope>
+                    </bibl>
+
+                    <bibl xml:id="Carmody_1939" type="Edition" xml:lang="fr-lat">
+                      <author> Francis James Carmody </author>
+                      <title type="main"> Physiologus Latinus </title>
+                      <title type="sub"> Editions Préliminaires, Versio B </title>
+                      <pubPlace> Paris </pubPlace>
+                      <publisher> Droz </publisher>
+                      <date when="1939"> 1939 </date>
+                      <biblScope unit="page"> 61 pages </biblScope>
+                    </bibl>
+
+                    <bibl xml:id="Charpier_2020" type="Thèse_doctorat" xml:lang="fr">
+                      <author> Marion Charpier </author>
+                      <title> Le dragon médiéval. <hi rend="italic">Physiologus</hi>, encyclopédies
+                        et bestiaires enluminés (VIIIe-XVe s.) : Texte et Image </title>
+                      <date> 2020 </date>
+                      <pubPlace> Paris </pubPlace>
+                      <affiliation> Ecole des Hautes Etudes en Sciences Sociales </affiliation>
+                      <respStmt>
+                        <resp> Directeur de thèse </resp>
+                        <persName> Jacques Berlioz </persName>
+                        <orgName> Ecole des Hautes Etudes en Sciences Sociales </orgName>
+                      </respStmt>
+                      <ref target="https://www.theses.fr/2020EHES0180"/>
+                    </bibl>
+
+                    <bibl xml:id="Clark_1992" type="Edition" xml:lang="eng">
+                      <author> Willene B. Clark </author>
+                      <title type="main"> A Medieval Book of Beasts: The Second-Family Bestiary </title>
+                      <title type="sub"> Commentary, Art, Text and Translation </title>
+                      <pubPlace> Woodbridge </pubPlace>
+                      <publisher> The Boydell Press </publisher>
+                      <date when="2006"> 2006 </date>
+                      <biblScope unit="page"> 344 pages </biblScope>
+                    </bibl>
+
+                    <bibl xml:id="Etymologie_XII" type="Edition" xml:lang="fr-lat">
+                      <author>
+                        <persName> Isidore de Séville </persName>
+                        <persName> Jacques André </persName>
+                      </author>
+                      <title type="main"> Les Etymologies. Livre XII </title>
+                      <title type="sub"> Des animaux </title>
+                      <pubPlace> Paris </pubPlace>
+                      <publisher> Les Belles Lettres </publisher>
+                      <date when="1986"> 1986 </date>
+                      <biblScope unit="page"> 309 pages </biblScope>
+                    </bibl>
+
+                    <bibl xml:id="Muratova_1985" type="Actes_colloque" xml:lang="it">
+                      <author> Xénia Muratova </author>
+                      <title> I manoscritti miniati del bestiario medieval: origine, formazione e
+                        sviluppo di cicli di illustrazioni. I bestiari miniate in Inghilterra nei
+                        secoli XII-XIV </title>
+                      <series>
+                        <title type="main"> L'uomo di fronte al mondo animale nell'alto Medioevo </title>
+                        <title> Settimane di studio del Centro italiano di studi sull'alto Medioevo
+                        </title>
+                      </series>
+                      <pubPlace> Spolète </pubPlace>
+                      <publisher> Fondazione CISAM </publisher>
+                      <date when="1985"> 1985 </date>
+                      <biblScope unit="page" from="1319" to="1372"> 1319-1372 + XXXVII Planches
+                      </biblScope>
+                    </bibl>
+
+                    <bibl xml:id="Codices_reg_lat" type="Travaux" xml:lang="lat">
+                      <author>
+                        <persName> André Wilmart </persName>
+                        <persName type="institution"> Biblioteca apostolica Vaticana </persName>
+                      </author>
+                      <title> Codices reginenses latini </title>
+                      <series>
+                        <title> Bibliothecae apostolicae vaticane codices manuscripti recensiti </title>
+                        <biblScope unit="tome"> Tome 2 </biblScope>
+                      </series>
+                      <pubPlace> Saint-Siège, cité du Vatican </pubPlace>
+                      <publisher> Biblioteca vaticana </publisher>
+                      <date from="1937" to="1945"> 1937-1945 </date>
+                      <biblScope unit="page"> 992 pages </biblScope>
+                    </bibl>
+
+                    <bibl xml:id="Yapp_1985" type="Article">
+                      <author> William Brunsdon Yapp </author>
+                      <title> A New Look at English Bestiaries </title>
+                      <series>
+                        <title> Medium Aevum </title>
+                        <biblScope unit="volume"> Volume 54 </biblScope>
+                        <biblScope unit="numero"> 1 </biblScope>
+                      </series>
+                      <publisher> Society for the Study of Medieval Languages and Literature </publisher>
+                      <date when="1985"> Janvier 1985 </date>
+                      <biblScope unit="page" from="1" to="19"> 1-19 </biblScope>
+                      <ref target="https://doi.org/10.2307/43628861"/>
+                    </bibl>
+                  </listBibl>
+                </provenance>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="éléphant" sex="M">
+            <persName>éléphant mâle</persName>
+            <interp>Adam</interp>
+          </person>
+          <person xml:id="éléphante" sex="F">
+            <persName>éléphante</persName>
+            <interp>Eve</interp>
+          </person>
+          <person xml:id="éléphanteau" sex="M">
+            <persName>Jeune éléphant</persName>
+            <interp>Humanité</interp>
+          </person>
+          <person xml:id="éléphants">
+            <persName>Les éléphants</persName>
+            <interp>Les prophètes et patriarches</interp>
+          </person>
+          <person xml:id="paruulus">
+            <persName> Le petit éléphant </persName>
+            <interp>Jésus-Christ</interp>
+          </person>
+          <person xml:id="dragon" sex="M">
+            <persName>dragon</persName>
+            <interp>Diable</interp>
+          </person>
+          <person xml:id="mandragore">
+            <persName> Mandragore </persName>
+            <interp>Fruit défendu</interp>
+          </person>
+          <person xml:id="Adam">
+            <persName>Adam</persName>
+          </person>
+          <person xml:id="Eve">
+            <persName >Eve</persName>
+          </person>
+          <person xml:id="Humanité">
+            <persName>Humanité</persName>
+          </person>
+          <person xml:id="diable">
+            <persName>Diable</persName>
+          </person>
+          <person xml:id="prophetes">
+            <persName>Prophète et patriarches</persName>
+          </person>
+          <person xml:id="JC">
+            <persName>Jésus-Christ</persName>
+          </person>
+          <person xml:id="Dieu">
+            <persName>Dieu</persName>
+          </person>
+          <person xml:id="fruit_défendu">
+            <persName>Fruit défendu</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <settingDesc>
+        <listPlace>
+          <place>
+            <placeName xml:id="Inde">Inde</placeName>
+          </place>
+          <place>
+            <placeName xml:id="Afrique">Afrique</placeName>
+          </place>
+          <place>
+            <placeName xml:id="paradis">Paradis</placeName>
+          </place>
+          <place>
+            <placeName xml:id="Eau">Eaux</placeName>
+          </place>
+        </listPlace>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+<facsimile>
+      <surface xml:id="f38v">
+         <graphic url="f°38v.jpg" width="1648px" height="2235px"/>
+         <zone xml:id="z1" ulx="744" uly="411" lrx="1296" lry="478"/>
+         <zone xml:id="z2" ulx="749" uly="464" lrx="1414" lry="522"/>
+         <zone xml:id="z3" ulx="747" uly="524" lrx="1414" lry="565"/>
+         <zone xml:id="z4" ulx="748" uly="572" lrx="1424" lry="617"/>
+         <zone xml:id="z5" ulx="747" uly="620" lrx="1439" lry="664"/>
+         <zone xml:id="z6" ulx="386" uly="668" lrx="1432" lry="710"/>
+         <zone xml:id="z7" ulx="390" uly="717" lrx="1430" lry="762"/>
+         <zone xml:id="z8" ulx="387" uly="765" lrx="1408" lry="811"/>
+         <zone xml:id="z9" ulx="387" uly="815" lrx="1408" lry="861"/>
+         <zone xml:id="z10" ulx="384" uly="863" lrx="1415" lry="908"/>
+         <zone xml:id="z11" ulx="382" uly="912" lrx="1421" lry="951"/>
+         <zone xml:id="z12" ulx="386" uly="955" lrx="1405" lry="1001"/>
+         <zone xml:id="z13" ulx="383" uly="1007" lrx="1408" lry="1056"/>
+         <zone xml:id="z14" ulx="381" uly="1059" lrx="1400" lry="1103"/>
+         <zone xml:id="z15" ulx="376" uly="1103" lrx="1403" lry="1147"/>
+         <zone xml:id="z16" ulx="383" uly="1150" lrx="1397" lry="1196"/>
+         <zone xml:id="z17" ulx="384" uly="1201" lrx="1399" lry="1244"/>
+         <zone xml:id="z18" ulx="381" uly="1247" lrx="1397" lry="1285"/>
+         <zone xml:id="z19" ulx="382" uly="1290" lrx="1396" lry="1343"/>
+         <zone xml:id="z20" ulx="380" uly="1345" lrx="1388" lry="1385"/>
+         <zone xml:id="z21" ulx="381" uly="1389" lrx="1414" lry="1449"/>
+         <zone xml:id="z22" ulx="379" uly="1451" lrx="1380" lry="1488"/>
+         <zone xml:id="z23" ulx="382" uly="1493" lrx="1400" lry="1535"/>
+         <zone xml:id="z24" ulx="378" uly="1540" lrx="1420" lry="1584"/>
+         <zone xml:id="z25" ulx="377" uly="1590" lrx="1419" lry="1632"/>
+      </surface>
+      
+      <surface xml:id="f39r">
+         <graphic url="f°39r.jpg" width="1654px" height="2236px"/>
+         <zone xml:id="z26" ulx="281" uly="155" lrx="1345" lry="200"/>
+         <zone xml:id="z27" ulx="279" uly="207" lrx="1346" lry="241"/>
+         <zone xml:id="z28" ulx="282" uly="254" lrx="1346" lry="289"/>
+         <zone xml:id="z29" ulx="285" uly="298" lrx="1341" lry="341"/>
+         <zone xml:id="z30" ulx="284" uly="348" lrx="986" lry="390"/>
+         <zone xml:id="z31" ulx="990" uly="345" lrx="1349" lry="390"/>
+         <zone xml:id="z32" ulx="286" uly="397" lrx="863" lry="441"/>
+         <zone xml:id="z33" ulx="862" uly="393" lrx="1339" lry="431"/>
+         <zone xml:id="z34" ulx="289" uly="448" lrx="950" lry="485"/>
+         <zone xml:id="z35" ulx="955" uly="435" lrx="1338" lry="481"/>
+         <zone xml:id="z36" ulx="289" uly="489" lrx="859" lry="546"/>
+         <zone xml:id="z37" ulx="863" uly="478" lrx="1338" lry="539"/>
+         <zone xml:id="z38" ulx="290" uly="535" lrx="863" lry="581"/>
+         <zone xml:id="z39" ulx="876" uly="518" lrx="1335" lry="576"/>
+         <zone xml:id="z40" ulx="292" uly="588" lrx="893" lry="630"/>
+         <zone xml:id="z41" ulx="898" uly="577" lrx="1333" lry="619"/>
+         <zone xml:id="z42" ulx="295" uly="634" lrx="1004" lry="680"/>
+         <zone xml:id="z43" ulx="1011" uly="620" lrx="1334" lry="667"/>
+         <zone xml:id="z44" ulx="293" uly="685" lrx="804" lry="730"/>
+         <zone xml:id="z45" ulx="809" uly="675" lrx="1337" lry="717"/>
+         <zone xml:id="z46" ulx="299" uly="739" lrx="736" lry="779"/>
+         <zone xml:id="z47" ulx="735" uly="723" lrx="1332" lry="762"/>
+         <zone xml:id="z48" ulx="299" uly="785" lrx="783" lry="828"/>
+         <zone xml:id="z49" ulx="785" uly="771" lrx="1335" lry="814"/>
+         <zone xml:id="z50" ulx="298" uly="836" lrx="771" lry="876"/>
+         <zone xml:id="z51" ulx="771" uly="819" lrx="1331" lry="853"/>
+         <zone xml:id="z52" ulx="303" uly="886" lrx="834" lry="923"/>
+         <zone xml:id="z53" ulx="835" uly="867" lrx="1349" lry="920"/>
+         <zone xml:id="z54" ulx="302" uly="938" lrx="672" lry="984"/>
+         <zone xml:id="z55" ulx="670" uly="924" lrx="979" lry="968"/>
+         <zone xml:id="z56" ulx="980" uly="911" lrx="1339" lry="951"/>
+         <zone xml:id="z57" ulx="302" uly="980" lrx="739" lry="1029"/>
+         <zone xml:id="z58" ulx="745" uly="965" lrx="998" lry="1015"/>
+         <zone xml:id="z59" ulx="993" uly="953" lrx="1334" lry="993"/>
+         <zone xml:id="z60" ulx="305" uly="1025" lrx="725" lry="1075"/>
+         <zone xml:id="z61" ulx="721" uly="1012" lrx="1002" lry="1062"/>
+         <zone xml:id="z62" ulx="1003" uly="995" lrx="1335" lry="1044"/>
+         <zone xml:id="z63" ulx="306" uly="1066" lrx="722" lry="1125"/>
+         <zone xml:id="z64" ulx="717" uly="1060" lrx="1066" lry="1119"/>
+         <zone xml:id="z65" ulx="1064" uly="1042" lrx="1332" lry="1098"/>
+         <zone xml:id="z66" ulx="309" uly="1131" lrx="664" lry="1177"/>
+         <zone xml:id="z67" ulx="663" uly="1124" lrx="952" lry="1169"/>
+         <zone xml:id="z68" ulx="953" uly="1109" lrx="1327" lry="1148"/>
+         <zone xml:id="z69" ulx="310" uly="1182" lrx="983" lry="1219"/>
+         <zone xml:id="z70" ulx="979" uly="1161" lrx="1337" lry="1202"/>
+         <zone xml:id="z71" ulx="312" uly="1234" lrx="737" lry="1274"/>
+         <zone xml:id="z72" ulx="739" uly="1223" lrx="997" lry="1265"/>
+         <zone xml:id="z73" ulx="1001" uly="1206" lrx="1339" lry="1256"/>
+         <zone xml:id="z74" ulx="313" uly="1279" lrx="603" lry="1332"/>
+         <zone xml:id="z75" ulx="593" uly="1273" lrx="996" lry="1314"/>
+         <zone xml:id="z76" ulx="998" uly="1254" lrx="1345" lry="1304"/>
+         <zone xml:id="z77" ulx="313" uly="1332" lrx="696" lry="1380"/>
+         <zone xml:id="z78" ulx="696" uly="1309" lrx="1028" lry="1362"/>
+         <zone xml:id="z79" ulx="1021" uly="1299" lrx="1326" lry="1352"/>
+         <zone xml:id="z80" ulx="314" uly="1379" lrx="804" lry="1423"/>
+         <zone xml:id="z81" ulx="802" uly="1357" lrx="1323" lry="1401"/>
+         <zone xml:id="z82" ulx="316" uly="1422" lrx="881" lry="1462"/>
+         <zone xml:id="z83" ulx="881" uly="1403" lrx="1324" lry="1447"/>
+         <zone xml:id="z84" ulx="320" uly="1481" lrx="722" lry="1520"/>
+         <zone xml:id="z85" ulx="719" uly="1461" lrx="1014" lry="1506"/>
+         <zone xml:id="z86" ulx="1013" uly="1447" lrx="1329" lry="1492"/>
+         <zone xml:id="z87" ulx="319" uly="1522" lrx="723" lry="1573"/>
+         <zone xml:id="z88" ulx="725" uly="1503" lrx="825" lry="1567"/>
+         <zone xml:id="z89" ulx="821" uly="1503" lrx="1328" lry="1548"/>
+         <zone xml:id="z90" ulx="322" uly="1567" lrx="905" lry="1625"/>
+         <zone xml:id="z91" ulx="904" uly="1550" lrx="1324" lry="1608"/>
+      </surface>
+      
+      <surface xml:id="f39v">
+         <graphic url="f°39v.jpg" width="1648px" height="2235px"/>
+         <zone xml:id="z92" ulx="317" uly="593" lrx="1368" lry="671"/>
+         <zone xml:id="z93" ulx="324" uly="662" lrx="1368" lry="721"/>
+         <zone xml:id="z94" ulx="318" uly="718" lrx="1383" lry="777"/>
+         <zone xml:id="z95" ulx="325" uly="772" lrx="1367" lry="826"/>
+         <zone xml:id="z96" ulx="320" uly="823" lrx="1365" lry="874"/>
+         <zone xml:id="z97" ulx="326" uly="871" lrx="1367" lry="932"/>
+         <zone xml:id="z98" ulx="324" uly="910" lrx="1364" lry="979"/>
+         <zone xml:id="z99" ulx="329" uly="970" lrx="1359" lry="1029"/>
+         <zone xml:id="z100" ulx="328" uly="1024" lrx="1362" lry="1079"/>
+         <zone xml:id="z101" ulx="328" uly="1069" lrx="1359" lry="1131"/>
+         <zone xml:id="z102" ulx="327" uly="1119" lrx="1358" lry="1180"/>
+         <zone xml:id="z103" ulx="327" uly="1158" lrx="1356" lry="1234"/>
+         <zone xml:id="z104" ulx="329" uly="1204" lrx="1357" lry="1286"/>
+         <zone xml:id="z105" ulx="333" uly="1246" lrx="1357" lry="1325"/>
+         <zone xml:id="z106" ulx="335" uly="1298" lrx="1356" lry="1377"/>
+         <zone xml:id="z107" ulx="338" uly="1347" lrx="1354" lry="1431"/>
+         <zone xml:id="z108" ulx="346" uly="1401" lrx="1346" lry="1477"/>
+         <zone xml:id="z109" ulx="341" uly="1447" lrx="1343" lry="1530"/>
+         <zone xml:id="z110" ulx="1357" uly="1374" lrx="1508" lry="1646"/>
+         <zone xml:id="Dragon" ulx="134" uly="490" lrx="369" lry="1809"/>
+         <zone xml:id="Eléphant" ulx="133" uly="135" lrx="837" lry="575"/>
+         <zone xml:id="Mandragore" ulx="926" uly="126" lrx="1411" lry="663"/>
+      </surface>
+   </facsimile>
+   
+   <text type="edition">
+      <body>
+         
+         <pb n="#f38v"/>
+         
+         <milestone unit="notice" xml:id="notice_éléphant"/>
+         <div type="title">
+            <head>
+               <lb facs="#z1" style="title" rend="red"/>De elephante &per; qu&em; quilibet fidelis
+            </head>
+         </div>
+         
+         <div type="ethology">
+            <p>
+               <lb facs="#z2"/>Est a&nim;al &qui; &dicitur; <persName ref="#éléphant">elephans</persName>, elafio grece mons
+               
+               <lb facs="#z3"/>&dicitur; latine, et ideo &dicitur; uocatum a magnitudine cor- 
+               
+               <lb facs="#z4"/>poris. Dentes ei&us; sunt ebur. Lucas uocat <persName ref="#éléphant">&eum;</persName> bou&em; quia 
+               
+               <lb facs="#z5"/>null&um; a&nim;al uidet&ur; &esse; mai&us; eo. Et ideo &per;git
+               p&zz;&us; ad &pmacron;li-
+               
+               <lb facs="#z6"/>um : quia aptum &eius; &pmacron;lio et
+               pon&unt; su&per; <persName ref="#éléphant">e&um;</persName> turr&em; de&qua; dimicant &quasi; de quod&am; castel- 
+               
+               <lb facs="#z7"/>lo. Si <persName ref="#éléphants">plures</persName> sunt : gregatim incedunt motu quo ualent saltant auersi
+               coe&unt;. 
+               
+               <lb facs="#z8"/>&Non; ampli&usf; &qua;m semel gignunt. Pri&us; fuerunt
+               &apud; <placeName ref="#Afrique">a<choice>
+                  <orig>ff</orig>
+                  <reg>f</reg>
+               </choice>ricam</placeName> et <placeName ref="#Inde">indiam</placeName> : &sed; modo 
+               
+               <lb facs="#z9"/>sunt in|sola <placeName ref="#Afrique">a<choice>
+                  <orig>ff</orig>
+                  <reg>f</reg>
+               </choice>rica</placeName>. Truncos comedunt : et arenam bibunt. Dormientes n&um;&qua;m
+               
+               <lb
+                  facs="#z10"/>rec&um;bant &sed; &quando; lassi sunt applicant se qui&bus;dam
+               arbori&bus; et ita fulti dormiunt. 
+               
+               <lb facs="#z11"/>Cum autem aliquis uult eas
+               ca&per;e : succidit arbores pene totas ante&qua;m applic&ant; 
+               
+               <lb facs="#z12"/>se ibi
+               et &primus; conueni&unt; applicat&ur;i : cadunt cum &ipsius; arbori&bus; et quia
+               &non; &habent; 
+               
+               <lb facs="#z13"/>iuncturas unde possunt surgere : gem&unt; deni&que;
+               garriunt. &Quod; si solus est : ue- 
+               
+               <lb facs="#z14"/>nit <persName ref="#éléphants">alter</persName> qui releuare <persName ref="#éléphant">eum</persName> cupit
+               &#38; quia &non; potest : plorant nimis garrit. 
+               
+               <lb facs="#z15"/>Tunc <persName ref="#éléphants">multi alii</persName>
+               ueniunt et c&um; &non; queunt adiuvare &eum; : &omnes; simul garriunt. 
+               
+               <lb facs="#z16"/>Deni&que; audita tanta uoce : currit uenator et occidit <persName ref="#éléphant">eum</persName>. &Sed;
+               &tantum; sepe e&uenit; 
+               
+               <lb facs="#z17"/>&quando; &omnes; ita garriunt : &quidam;
+               un&us; <persName ref="#paruulus">&par;uulus</persName> ea&rum2; venit ibi et ponit os su&um; &pro;muscid&em; 
+               
+               <lb facs="#z18"/>subt&us; magn&um; ill&um; <persName ref="#éléphant">elephant&em;</persName> et sic eleuat eum os sic
+               euadit ab insidiatore. 
+               
+               <lb facs="#z19"/>&Habent; &autem; hoc &pro;&zz;p&um; &qui; ubi
+               fuerit os et peliis &huius; <persName ref="#paruulus">&par;uulus elephantis</persName> incensa : fum&us; ero&rum; 
+               
+               <lb facs="#z20"/>fugat serpentes et &omnem; uenen&um;, uel siqua fuer&unt; noxia.
+               Sciend&um; enim &qui; h<choice>
+                  <orig>u</orig>
+                  <reg>uius</reg>
+               </choice> ele- 
+               
+               <lb facs="#z21"/>phantes null&am; &habent; concupiscenti&am; carnis.
+               &Sed; c&um; uolunt filios &pro;creare : uad&unt; 
+               
+               <lb facs="#z22"/>uter&que; <persName ref="#éléphant">masculus</persName>
+               et <persName ref="#éléphante">fe&mina;</persName> ad orient&em; us&que; ad <placeName ref="#paradis">&para;dysum</placeName>. Est &autem2; ibi <persName ref="#mandragore">herba</persName> 
+               
+               <lb facs="#z23"/>&quae; &dicitur; <persName ref="#mandragore">mandragora</persName>, &qui; comedit <persName ref="#éléphante">fe&mina;</persName> et &primus;
+               seducit <persName ref="#éléphant">mascul&um;</persName> ut manducet, 
+               
+               <lb facs="#z24"/>deni&que; conueni&unt; simul, et
+               statim <persName ref="#éléphante">femina</persName> concipit. C&um; &autem; t&em;p&us; pariendi ue- 
+               
+               <lb facs="#z25"/>nit
+               uadit in <placeName ref="#Eau">a&qua;m</placeName> us&que; ad ubera et ibi parit &pro;pter <persName ref="#dragon">dracon&em;</persName> qu&em; &habent;
+               insidia- 
+               
+               <pb n="#f39r"/>              
+               <fw place="top-right" type="foliono">39</fw>
+               
+               <lb facs="#z26"/>torem. Et hoc facit semel post centum annos ideo parit in <placeName ref="#Eau">a&qua;</placeName> ne
+               cadat <persName ref="#éléphanteau">pusillus</persName> ad 
+               
+               <lb facs="#z27"/>terram quia &non; posset surgere iuncturis carens
+               et ne <persName ref="#dragon">draco</persName> devoret <persName ref="#éléphanteau">pusill&um;</persName> &eius;. Inte- 
+               
+               <lb facs="#z28"/>rim <persName ref="#éléphant">masculus</persName> custodit
+               ill&am; parient&em; &pro;pter <persName ref="#dragon">dracon&em;</persName> que uult eripere <persName ref="#éléphanteau">pusill&um;</persName> &eius; et con-
+               
+               <lb facs="#z29"/>culcare us&que; ad mort&em;.</p>
+         </div>
+         
+         <div type="symbolism">
+            
+            <p> &Non; possunt &omnia; h<choice>
+               <orig>e</orig>
+               <reg>ae</reg>
+            </choice>c accipi ad significa&tionem; &sed; ad &uer;itatem 
+               
+               <lb/><seg facs="#z30"
+               >rei. Duo elephantes figurant <persName ref="#Adam">ad&am;</persName> et <persName ref="#Eve">ev&am;</persName> qui erant </seg>
+               <seg facs="#z31">&in; <placeName ref="#paradis">paradiso</placeName> sine concupiscentia</seg>
+               
+               <lb/><seg facs="#z32">carnali et figur&ant; <add place="above">eti&am;</add>
+                  qu&em;libet fidel&em;. De isto </seg>
+               <seg facs="#z33">&dicitur; &quia; &per;git &pri;m&us; ad &pmacron;li&um; ita et
+                  bonus</seg>
+               
+               <lb/><seg facs="#z34"><persName ref="#Humanité">&homo;</persName> &pri;m&us; stat in acie sp&um;ali et &pri;m&us;
+                  accusator &esse; sui.</seg>
+               <seg facs="#z35">Su&per; <add place="above">ilium</add> pon&itur; turris : unde alii
+                  se</seg>
+               
+               <lb/><seg facs="#z36">defendant, de bono ist&ius; exemplo &non; solum </seg>
+               
+               <seg facs="#z37">&pro;tegunt&ur; alii &sed; et &ipse; defendit eos &oratio;-</seg>
+               
+               <lb/><seg facs="#z38">nib&us; suis. Si plures &sunt; gregatim incedunt</seg>
+               
+               <seg facs="#z39"> &quia; sem&per; &sunt; concordantes ad &in;vicem</seg>
+               
+               <lb/><seg facs="#z40">boni. Illi motu quo ualent saltant simil&itur; </seg>
+               
+               <seg facs="#z41">et isti nitant&ur; de &uer;tute &in; &uer;tutem.</seg>
+               
+               <lb/><seg facs="#z42">Illi &autem2; si coeunt et &non; amplius &qua;m semel gi <choice>
+                  <orig>n</orig>
+                  <reg/>
+               </choice>gn&unt;,</seg>
+               
+               <seg facs="#z43"> ita et istis est contrari&um;</seg>
+               
+               <lb/><seg facs="#z44">gignere et omnis delectatio carnis </seg>
+               
+               <seg facs="#z45">et &omnio; cauent &habere; &nisi; unam uxor&em;. Truncos</seg>
+               
+               <lb/><seg facs="#z46">comedunt illi et haren&am; bib&unt; </seg>
+               
+               <seg facs="#z47">et isti illos qui &sunt; &quasi; trunci de decorati et
+                  &in;com-</seg>
+               
+               <lb/><seg facs="#z48">positi morib&us; et alios quos deducit </seg>
+               
+               <seg facs="#z49">mundus &quasi; harena huc et illuc traiciunt</seg>
+               
+               <lb/><seg facs="#z50">insem<choice>
+                  <orig>e</orig>
+                  <reg>ina</reg>
+               </choice>ti &pmacron;it et faciunt de illis fr&em;s </seg>
+               
+               <seg facs="#z51">et <persName ref="#Humanité">filios suos</persName>, et eti&am; reme<choice>
+                  <orig>n</orig>
+                  <reg>m</reg>
+               </choice>bra sua. &Unde; &dicitur;</seg>
+               
+               <lb/><seg facs="#z52">petro de disco illo macta et manduca. </seg>
+               
+               <seg facs="#z53">Dormientes n&um;&quam; rec&um;b&ant; et &contra; ut su&pra;.</seg>
+               
+               <lb/><seg facs="#z54">Si<add place="above">c</add> religiosi uiri num&quam; us&que; </seg>
+               
+               <seg facs="#z55">ad satietat&em; dormiunt, </seg>
+               
+               <seg facs="#z56">&sed; stando &pmacron;gustant. Et &quia;</seg>
+               
+               <lb/><seg facs="#z57">inclinant se quib&us;d&am; arborib&us; </seg>
+               
+               <seg facs="#z58">cadunt cum &ipsius;. </seg>
+               
+               <seg facs="#z59"> Per arbores &huius; intelligit&ur;</seg>
+               
+               <lb/><seg facs="#z60">terrena substantia, cum qui se </seg>
+               
+               <seg facs="#z61">inclinat cadit cum </seg>
+               
+               <seg facs="#z62">&ipsa;, et ideo cecidit &pri;m&us;</seg>
+               
+               <lb/><seg facs="#z63"><persName ref="#Adam">&homo;</persName> et <persName ref="#Humanité">&omnis; &pro;genies</persName> eius, quia </seg>
+               
+               <seg facs="#z64">plus inclinauit se arbori </seg>
+               
+               <seg facs="#z65">&quam; debuit. &Qui; <choice>
+                  <orig>&pri;</orig>
+                  <reg>per</reg>
+               </choice>&qua;m</seg>
+               
+               <lb/><seg facs="#z66">cecidit &non; potuit surgere </seg>
+               
+               <seg facs="#z67">per se &quia; de illo &dicitur;.</seg>
+               
+               <seg facs="#z68">Nichil potestis sine me fa&cie;</seg>
+               
+               <lb/><seg facs="#z69">et &quia; &non; potuit surgere </seg> iacens clamauit ad
+               cui&us; 
+              
+              <seg facs="#z70">uoc&em; uenerunt <persName ref="#éléphants">alli</persName> et cla-</seg>
+               
+               <lb/><seg facs="#z71">mauerunt c&um; eo, &sed; &non; potue&runt;</seg>
+               
+               <seg facs="#z72"> adiuuare <persName ref="#éléphant">eum</persName>. &Quod2;</seg>
+               
+               <seg facs="#z73"> c&um; audiuit uenator &uenit;</seg>
+               
+               <lb/><seg facs="#z74">et occidit e&um;. Isti qui</seg>
+               
+               <seg facs="#z75"> uolue&rint; adiuuare: sunt <persName ref="#prophetes">&pro;&phete;</persName></seg>
+               
+               <seg facs="#z76"> et &patri;arche &sed; &non; potue-</seg>
+               
+               <lb/><seg facs="#z77">runt, ideo uulnerauit eos <add place="above">eum</add></seg>
+               
+               <seg facs="#z78"> <persName ref="#diable">diabolus</persName> us&que; mort&em;</seg>
+               
+               <seg facs="#z79"> sicut &scrip;t&um; &est; de illo.</seg>
+               
+               <lb/><seg facs="#z80"><quote source="Luc 10, 30">qui descendebat ab ier<choice>
+                  <orig>l&#859;</orig>
+                  <reg>usale</reg>
+               </choice>m in ierico.</quote></seg>
+               
+               <seg facs="#z81"> Simili<choice>
+                  <orig>t&#859;</orig>
+                  <reg>tudines</reg>
+               </choice> et alii qui se c&om;mitt&unt; terre-</seg>
+               
+               <lb/><seg facs="#z82">ne substanti<choice>
+                  <orig>e</orig>
+                  <reg>ae</reg>
+               </choice> et deferent <persName ref="#Dieu">de&um;</persName> et &per;eunt</seg>
+               
+               <seg facs="#z83">et &tantum; ali&quam; uenit <persName ref="#paruulus">&par;uulus</persName></seg>
+               
+               <lb/><seg facs="#z84">et adiuuat eum. <persName ref="#paruulus">Paruulus</persName></seg>
+               
+               <seg facs="#z85">iste &est; <persName ref="#JC">&dominus; &noster;</persName>. &Unde; &dicitur;.</seg>
+               
+               <seg facs="#z86">Et aduoc&ant; <persName ref="#JC">&iheso;</persName> <persName ref="#paruulus">&par;uul&um;</persName></seg>
+               
+               <lb/><seg facs="#z87">et &cum;. <persName ref="#paruulus">Paruulus</persName> est &homo; &quia; fact&us;</seg>
+               
+               <seg facs="#z88"><damage agent="hole"/></seg>
+               
+               <seg facs="#z89">&est;. &Quod2; eleuauit iacentem : quasi mortu&us;</seg>
+               
+               <lb/><seg facs="#z90">&est; &propter; peccatores et liberauit a potestate</seg>
+               
+               <seg facs="#z91"><persName ref="#diable">diaboli</persName>. Cui&us; os et pellis et &cum;.</seg>
+               
+               <pb n="#f39v"/>
+               
+               <lb facs="#z92"/>Per os &qui; est fortitudo corporis: intellig&itur; deitas et per
+               pellem humanitas 
+               
+               <lb facs="#z93"/>id est ubicumque habitat <persName ref="#JC">&christus;</persName> qui &est;
+               <persName ref="#Dieu">&deus;</persName> et &homo;, fugiunt &omnia; uenena et &omnis; 
+               
+               <lb facs="#z94"/>potestates
+               inimici. Sequ&itur;. Elephantes &non; &habent; null&am; concupiscenti&am; carnis 
+               
+               <lb
+                  facs="#z95"/>et &cetera;. Isti &significant; <persName ref="#Adam">ad&am;</persName> et <persName ref="#Eve">ev&am;</persName> qui &non; habebant
+               concupiscenti&am; &antequam; 
+               
+               <lb facs="#z96"/>coe&unt; &in; obedientes et &tamen;
+               nudi erant. Cum &autem2; c&om;mederunt de <persName ref="#fruit_défendu">fructu</persName> 
+               
+               <lb facs="#z97"/>in obedientie per
+               seduction&em; <persName ref="#diable">diaboli</persName> ; concepit <persName ref="#Eve">mulier</persName> extra <placeName ref="#paradis">paradis&um;</placeName>. 
+               
+               <lb facs="#z98"/>Post&qua;m expuli sunt de <placeName ref="#paradis">&para;dyso</placeName> ; uenit &in; hunc mund&um; uelut &in; magn&am;
+               
+               <lb facs="#z99"/><placeName ref="#Eau">aqu&am;</placeName>, ubi <persName ref="#éléphante">fe&mina;</persName> &par;turit &pro;lem su&am; &pro;pter
+               <persName ref="#dragon">dracon&em;</persName>. Hic sign&um; <placeName ref="#Eau">a&qua;</placeName> : hunc 
+               
+               <lb facs="#z100"/>mund&um;, &propter;
+               tempestates. &Unde; &dicitur; salu&um; me fac <persName ref="#Dieu">&deus;</persName> &quoniam; <quote
+                  source="Ps 69(68), 2"><choice>
+                     <orig>i</orig>
+                     <reg>intraverunt</reg>
+                  </choice>
+                  <choice>
+                     <orig>a</orig>
+                     <reg>aquae</reg>
+                  </choice>
+                  <choice>
+                     <orig>u</orig>
+                     <reg>usque</reg>
+                  </choice>
+                  <choice>
+                     <orig>a</orig>
+                     <reg>ad</reg>
+                  </choice>
+                  <choice>
+                     <orig>a</orig>
+                     <reg>animam</reg>
+                  </choice>
+                  <choice>
+                     <orig>m</orig>
+                     <reg>meam</reg>
+                  </choice></quote>
+               
+               <lb facs="#z101"/>Que tu&um; debet parere : intrat &in; <placeName ref="#Eau">a&qua;m</placeName> us&que; ad ubera. In
+               uberib&us; &est; mag- 
+               
+               <lb facs="#z102"/>na luxuria et ideo intrat ibi usque &in;
+               <placeName ref="#Eau">a&qua;m</placeName> quia c&um; c&om;pleuerit luxuri&am; 
+               
+               <lb facs="#z103"/>suam, concipit
+               dolor&em; et post pe&per;it iniquitat&em;. Et hoc facit &in; <placeName ref="#Eau">aqu&am;</placeName> ne 
+               
+               <lb
+                  facs="#z104"/>cadit ad terr&am;, id est ne ex toto cadat in terrenis &quia;
+               mollior est sub- 
+               
+               <lb facs="#z105"/>stantia aque <placeName ref="#Eau">&qua;m </placeName>terre, id est min&us; &enim;
+               cadere &in; <placeName ref="#Eau">a&qua;</placeName> &quasi; ad terr&am;. Quia 
+               
+               <lb facs="#z106"/>si &omnio; ad heserit
+               terrenis : <persName ref="#dragon">draco</persName> &idest; <persName ref="#diable">diabolus</persName> devorabit e&um;. masculus 
+               
+               <lb facs="#z107"/>e&am;
+               <supplied reason="illegible">custodit</supplied> d&um; parit quia <persName ref="#JC">&dominus;
+               &noster;</persName> qui uir est et &capellae; &uestrum; sem&per; custo- 
+               
+               <lb facs="#z108"/>dit
+               <supplied reason="illegible">suus</supplied> et &in; terra et &in; <placeName ref="#Eau">aqua</placeName>. Hoc semel
+               facium post &cent; annos <add facs="#z110" place="margin right">Simili<choice>
+                  <orig>t&#859;</orig>
+                  <reg>tudines</reg>
+               </choice> et boni que non curant nisi de primis nuptus et hoc post centum <choice>
+                  <orig>ā</orig>
+                  <reg>an</reg>
+               </choice>no</add> id est 
+               
+               <lb facs="#z109"/>c&um; ad &per;fectam etat&em;
+               ueni&unt;, &non; preueni&unt; t&em;p&us; : sicut stulti faciunt.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

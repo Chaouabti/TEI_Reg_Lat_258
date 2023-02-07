@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ENTITY am "<choice><abbr> &#257;</abbr><expan>am</expan></choice>">
+<!ENTITY ant "<choice><abbr>&#257;t</abbr><expan>ant</expan></choice>">
+<!ENTITY apud "<choice><abbr>ap&#772;</abbr><expan>apud</expan></choice>">
+<!ENTITY que "<choice><abbr>q&#42859;</abbr><expan>que</expan></choice>">
+<!ENTITY autem "<choice><abbr>a&#363;</abbr><expan>autem</expan></choice>">
+<!ENTITY autem2 "<choice><abbr>a&#363;t</abbr><expan>autem</expan></choice>">
+<!ENTITY bus "<choice><abbr>b&#8323;</abbr><expan>bus</expan></choice>">
+<!ENTITY contra "<choice><abbr>&#772;c</abbr><expan>contra</expan></choice>">
+<!ENTITY cum "<choice><abbr>&#772;c</abbr><expan>cum</expan></choice>">
+<!ENTITY uenit "<choice><abbr>uen&#877;</abbr><expan>uenit</expan></choice>">
+<!ENTITY habent "<choice><abbr>hn&#772;t</abbr><expan>habent</expan></choice>">
+<!ENTITY Habent "<choice><abbr>Ht&#771;</abbr><expan>Habent</expan></choice>">
+<!ENTITY Habent "<choice><abbr>Ht&#772;</abbr><expan>Habent</expan></choice>">
+<!ENTITY huius "<choice><abbr>h&#42864;</abbr><expan>huius</expan></choice>">
+<!ENTITY in "<choice><abbr>&#299;</abbr><expan>in</expan></choice>">
+<!ENTITY ipsius "<choice><abbr>ip&#772;is</abbr><expan>ipsius</expan></choice>">
+<!ENTITY non "<choice><abbr>n&#333;</abbr><expan>non</expan></choice>">
+<!ENTITY Non "<choice><abbr>N&#333;</abbr><expan>Non</expan></choice>">
+<!ENTITY omnem "<choice><abbr>o&#275;</abbr><expan>omnem</expan></choice>">
+<!ENTITY omnes "<choice><abbr>o&#275;s</abbr><expan>omnes</expan></choice>">
+<!ENTITY omnia "<choice><abbr> om&#299;a</abbr><expan>omnia</expan></choice>">
+<!ENTITY per "<choice><abbr>&#42833;</abbr><expan>per</expan></choice>">
+<!ENTITY par "<choice><abbr>&#42833;</abbr><expan>par</expan></choice>">
+<!ENTITY em "<choice><abbr>&#275;</abbr><expan>em</expan></choice>">
+<!ENTITY enim "<choice><abbr>&#183;&#275;&#183;</abbr><expan>enim</expan></choice>">      
+<!ENTITY nim "<choice><abbr>&#299;</abbr><expan>nim</expan></choice>">
+<!ENTITY qui "<choice><abbr>&#42841;</abbr><expan>qui</expan></choice>">
+<!ENTITY dicitur "<choice><abbr>dr&#772;</abbr><expan>dicitur</expan></choice>">
+<!ENTITY us "<choice><abbr>&#42864;</abbr><expan>us</expan></choice>">
+<!ENTITY um "<choice><abbr>&#363;</abbr><expan>um</expan></choice>">
+<!ENTITY ur "<choice><abbr>&#7633;</abbr><expan>ur</expan></choice>">
+<!ENTITY esse "<choice><abbr>e&#862;e</abbr><expan>esse</expan></choice>">
+<!ENTITY est "<choice><abbr>&#0275;</abbr><expan>est</expan></choice>">
+<!ENTITY homo "<choice><abbr>h&#333;</abbr><expan>homo</expan></choice>">
+<!ENTITY zz "<choice><abbr>&#859;</abbr><expan>ri</expan></choice>">
+<!ENTITY pmacron "<choice><abbr>p&#772;</abbr><expan>prae</expan></choice>">
+<!ENTITY pri "<choice><abbr>p&#859;</abbr><expan>pri</expan></choice>">
+<!ENTITY eum "<choice><abbr>e&#363;</abbr><expan>eum</expan></choice>">
+<!ENTITY eius "<choice><abbr>&#8231;&#275;&#8231;</abbr><expan>eius</expan></choice>">
+<!ENTITY primus "<choice><abbr>p&#42864;</abbr><expan>primus</expan></choice>">
+<!ENTITY pro "<choice><abbr>&#42835;</abbr><expan>pro</expan></choice>">
+<!ENTITY qua "<choice><abbr>q&#7493;</abbr><expan>qua</expan></choice>">
+<!ENTITY quae "<choice><abbr>q&#772;</abbr><expan>quae</expan></choice>">
+<!ENTITY quando "<choice><abbr>qn&#772;</abbr><expan>quando</expan></choice>">
+<!ENTITY quasi "<choice><abbr>q&#7493;i</abbr><expan>quasi</expan></choice>">
+<!ENTITY que "<choice><abbr>q&#42859;</abbr><expan>que</expan></choice>">
+<!ENTITY quia "<choice><abbr>q&#42843;</abbr><expan>quia</expan></choice>">
+<!ENTITY quidam "<choice><abbr>q&#271;</abbr><expan>quidam</expan></choice>">
+<!ENTITY Quod "<choice><abbr>Q&#176;d</abbr><expan>Quod</expan></choice>">
+<!ENTITY rum "<choice><abbr>&#42845;</abbr><expan>rum</expan></choice>">
+<!ENTITY rum2 "<choice><abbr>&#8478;</abbr><expan>rum</expan></choice>">
+<!ENTITY runt "<choice><abbr>&#772;R</abbr><expan>runt</expan></choice>">
+<!ENTITY sed "<choice><abbr>s&#42859;</abbr><expan>sed</expan></choice>">
+<!ENTITY Sed "<choice><abbr>S&#42859;</abbr><expan>Sed</expan></choice>">
+<!ENTITY tantum "<choice><abbr>tam&#772;</abbr><expan>tantum</expan></choice>">
+<!ENTITY tamen "<choice><abbr>tn&#772;</abbr><expan>tamen</expan></choice>">
+<!ENTITY tionem "<choice><abbr>t&#333;em</abbr><expan>tionem</expan></choice>">
+<!ENTITY uer "<choice><abbr>&#7911;</abbr><expan>uer</expan></choice>">
+<!ENTITY unt "<choice><abbr>&#363;t</abbr><expan>unt</expan></choice>">
+<!ENTITY usf "<choice><abbr>u&#738;</abbr><expan>us</expan></choice>">
+<!ENTITY itur "<choice><abbr>r&#772;</abbr><expan>itur</expan></choice>">
+<!ENTITY ius "<choice><abbr>i&#42864;</abbr><expan>ius</expan></choice>">
+<!ENTITY ipse "<choice><abbr> ip&#772;e</abbr><expan>ipse</expan></choice>">
+<!ENTITY oratio "<choice><abbr>or&#772;o</abbr><expan>oratio</expan></choice>">
+<!ENTITY sunt "<choice><abbr>st&#772;</abbr><expan>sunt</expan></choice>">
+<!ENTITY omnio "<choice><abbr>o&#299;o</abbr><expan>omnio</expan></choice>">
+<!ENTITY uer "<choice><abbr>u&#859;</abbr><expan>uer</expan></choice>">
+<!ENTITY habere "<choice><abbr> hr&#772;e</abbr><expan> habere </expan></choice>">
+<!ENTITY nisi "<choice><abbr>n&#859;</abbr><expan>nisi</expan></choice>">
+<!ENTITY Unde "<choice><abbr>Un&#772;</abbr><expan>Unde</expan></choice>">
+<!ENTITY quam "<choice><abbr>&#42841;&#7493;</abbr><expan>quam</expan></choice>">
+<!ENTITY pra "<choice><abbr>p&#7493;</abbr><expan>uer</expan></choice>">
+<!ENTITY ipsa "<choice><abbr>ip&#772;a</abbr><expan>ipsa</expan></choice>">
+<!ENTITY omnis "<choice><abbr> om&#299;s</abbr><expan>omnis</expan></choice>">
+<!ENTITY Qui "<choice><abbr>Q&#859;</abbr><expan>Qui</expan></choice>">
+<!ENTITY cie "<choice><abbr>c&#859;e</abbr><expan>cie</expan></choice>">
+<!ENTITY Quod2 "<choice><abbr>&#42840;</abbr><expan>Quod</expan></choice>">
+<!ENTITY phete "<choice><abbr>phe&#859;</abbr><expan>phete</expan></choice>">
+<!ENTITY patri "<choice><abbr>pr&#862;i</abbr><expan>patri</expan></choice>">
+<!ENTITY scrip "<choice><abbr>sc&#859;p</abbr><expan>scrip</expan></choice>">
+<!ENTITY om "<choice><abbr>&#333;</abbr><expan>om</expan></choice>">
+<!ENTITY dominus "<choice><abbr>do&#42864;</abbr><expan>Dominus</expan></choice>">
+<!ENTITY noster "<choice><abbr>nr&#772;</abbr><expan>noster</expan></choice>">
+<!ENTITY iheso "<choice><abbr>i&#295;o</abbr><expan>Iheso</expan></choice>">
+<!ENTITY propter "<choice><abbr>&#42835;&#862;p</abbr><expan>propter</expan></choice>">
+<!ENTITY christus "<choice><abbr>xp&#862;s</abbr><expan>Christus</expan></choice>">
+<!ENTITY deus "<choice><abbr>&#271;s</abbr><expan>Deus</expan></choice>">
+<!ENTITY cetera "<choice><abbr>cet&#859;a</abbr><expan>cetera</expan></choice>">
+<!ENTITY significant "<choice><abbr>sig&#7493;nt</abbr><expan>significant</expan></choice>">
+<!ENTITY antequam "<choice><abbr>an&#772;&#42841;&#7493;</abbr><expan>antequam</expan></choice>">
+<!ENTITY para "<choice><abbr>&#42833;a</abbr><expan>para</expan></choice>">
+<!ENTITY mina "<choice><abbr>m&#299;a</abbr><expan>mina</expan></choice>">
+<!ENTITY quoniam "<choice><abbr>qm&#772;</abbr><expan>quoniam</expan></choice>">
+<!ENTITY idest "<choice><abbr>&#183;i&#183;</abbr><expan>id est</expan></choice>">
+<!ENTITY cent "<choice><abbr>&#183;c&#183;</abbr><expan>centum</expan></choice>">
+<!ENTITY capellae "<choice><abbr>cap&#772;</abbr><expan>capellae</expan></choice>">
+<!ENTITY uestrum "<choice><abbr>ur&#772;m</abbr><expan>uestrum</expan></choice>">
+<!ENTITY rint "<choice><abbr>&#772;</abbr><expan>rint</expan></choice>">
+
+
+<!ATTLIST milestone type CDATA #FIXED "notice">
+<!ATTLIST div type (title | ethology | symbolism) #REQUIRED>
